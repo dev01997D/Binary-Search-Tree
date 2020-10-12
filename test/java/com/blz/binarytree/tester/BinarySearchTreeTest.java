@@ -22,4 +22,24 @@ public class BinarySearchTreeTest {
 		int size = binaryTree.getSize();
 		Assert.assertEquals(3, size);
 	}
+
+	@Test
+	public void testGivenNumbersWhenaddedToBSTShouldReturnCorrectSize() {
+		BinarySearchTree<Integer> binaryTree = new BinarySearchTree<Integer>();
+		binaryTree.addKey(56);
+		binaryTree.addKey(70);
+		binaryTree.addKey(30);
+		binaryTree.addKey(40);
+		binaryTree.addKey(22);
+		binaryTree.addKey(11);
+		binaryTree.addKey(3);
+		binaryTree.addKey(16);
+		binaryTree.addKey(60);
+		binaryTree.addKey(95);
+		binaryTree.addKey(65);
+		binaryTree.addKey(63);
+		binaryTree.addKey(67);
+		int size = binaryTree.getSize();
+		Assert.assertEquals(13, size);
+	}
 }
